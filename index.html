@@ -102,12 +102,107 @@
             background-color: rgb(241, 241, 241);
             outline: none;
         }
-
+        .topbar {
+            width: 100%;
+            border: solid 3px rgb(196, 191, 191);
+            border-bottom: hidden;
+            border-left: hidden;
+            border-right: hidden;
+            display: flex;
+           position: absolute;
+           top: 0;
+            align-items: flex-start;
+            align-content: flex-start;
+            justify-content: right;
+        }
+        .topbar a {
+            display: block;
+            float: right;
+            margin: 20px;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            
+        }
+    .btn {
+        display: block;
+        float: right;
+        font-size: 1.2rem;
+        color: rgb(107, 105, 105);
+        border: none;
+        margin-top: 5px;
+        
+        
+    }
+    .btnc {
+        display: block;
+        float: right;
+        font-size: 1.2rem;
+        color: rgb(107, 105, 105);
+        border: none;
+        
+        
+        
+    }   
     
+    .dropdown {
+        display: none;
+        position: relative;
+       /* left: 80%;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+        text-align:left;
+        padding: 20px;
+        max-width: 80px;
+        background-color: #f9f9f9;
+        min-width: 40px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;*/
+        background-color: #f9f9f9;
+        box-sizing: content-box;
+        border: grey solid 2px;
+        margin-top: 40px;
+        min-width: fit-content;
+        
+        
+        
+       
+        
+    }
+    
+    .btn:hover .dropdown{
+        display: inline-block;
+        box-sizing: content-box;
+        
+        
+    }
+
     </style>
 </head>
 <body>
-    <header> 
+    <header class="topbar">
+        
+        <div>
+            <div class="btnc">
+                <a href="#">Connect</a>
+            </div>
+            <div class="btn">
+                <button class="btn"> <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown">
+                    <p>sa ti trag mu</p>
+                    <P>sdada</P>
+                    <p>adadad</p>
+                    <p>adad</p>
+                </div>
+            </div>
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+
+        </div>
+    </header>
+    <div> 
         <div class="titlu">
             <p>G</p>
             <p>o</p>
@@ -117,7 +212,7 @@
             <p>e </p>
             
         </div>
-     </header>
+    </div>
      <div class = "gigi">
         <form> 
          
